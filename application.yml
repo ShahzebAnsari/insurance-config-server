@@ -1,3 +1,12 @@
 db:
   name: github_repo_updated
 name: hello
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: after_rou
+        uri: https://exale.org
+        predicates:
+        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
